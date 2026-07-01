@@ -18,7 +18,15 @@ class Person {
 }
 
 void main() {
-  var person = Person("Fikri", "Jakarta");
-  print(person.name);
-  print(person.address);
+  var person1 = Person("Fikri", "Jakarta");
+  print(person1.name);
+  print(person1.address);
+
+  var person2 = Person.withName("Budi");
+  print(person2.name);
+  print(person2.address);
+
+  var person3 = Person.withAddress("Surabaya");
+  print(person3.name);
+  print(person3.address);
 }
