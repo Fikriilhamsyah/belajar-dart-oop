@@ -12,9 +12,13 @@ class Person {
   // Constructor dengan this formal parameter
   Person(this.name, this.address) {}
 
-  // Named constructor
+  // Redirecting constructor
   Person.withName(String name) : this(name, "No address");
   Person.withAddress(String address) : this("No name", address);
+
+  // Redirecting constructor dengan named constructor
+  Person.fromJakarta() : this.withAddress("Jakarta");
+  Person.withNoName() : this.withName("No name");
 }
 
 void main() {
@@ -31,4 +35,12 @@ void main() {
   var person3 = Person.withAddress("Surabaya");
   print(person3.name);
   print(person3.address);
+
+  var person4 = Person.fromJakarta();
+  print(person4.name);
+  print(person4.address);
+
+  var person5 = Person.withNoName();
+  print(person5.name);
+  print(person5.address);
 }
