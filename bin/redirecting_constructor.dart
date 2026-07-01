@@ -13,8 +13,8 @@ class Person {
   Person(this.name, this.address) {}
 
   // Named constructor
-  Person.withName(this.name);
-  Person.withAddress(this.address);
+  Person.withName(String name) : this(name, "No address");
+  Person.withAddress(String address) : this("No name", address);
 }
 
 void main() {
