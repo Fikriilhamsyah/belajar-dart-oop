@@ -36,10 +36,12 @@ void main() {
   print(person3.name);
   print(person3.address);
 
+  // Memanggil redirecting constructor
   var person4 = Person.fromJakarta();
   print(person4.name);
   print(person4.address);
 
+  // Memanggil redirecting constructor
   var person5 = Person.withNoName();
   print(person5.name);
   print(person5.address);
