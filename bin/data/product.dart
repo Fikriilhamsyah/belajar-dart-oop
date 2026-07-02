@@ -11,6 +11,11 @@ class Product {
   String? _getCategory() {
     return category;
   }
+
+  // Override method toString() untuk menampilkan informasi product
+  String toString() {
+    return 'Product{id: $id, name: $name, quantity: $_quantity, category: $category}';
+  }
 }
 
 void main() {
