@@ -19,6 +19,6 @@ void main() {
   manager.sayHello("Bob");
 
   var vp = VicePresident();
-  vp.name = "Charlie";
+  vp.name = "Char lie";
   vp.sayHello("David");
 }
