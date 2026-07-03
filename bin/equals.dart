@@ -6,4 +6,7 @@ void main() {
 	
 	print(cat1 == cat1); // true
 	print(cat1 == cat2); // false karena berbeda instance
+
+  print(cat1.hashCode);
+  print(cat2.hashCode);
 }
